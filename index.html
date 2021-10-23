@@ -9,19 +9,24 @@
   <body>
 
     <h1 id="title">This is the title</h1>
-    <p id="description">description about how to survey works</p>
+    <p id="description">This is a test description about how to survey works</p>
     <form id="survey-form">
+
+      <div>
       <label id="name-label">Name</label>
       <input id="name" type="text" placeholder="Hector Torres" required="true">
+    </div>
 
-      <label id="email-label">Email</label>
-      <input id="email" type="email" placeholder="Hector.Torres@gmail.com" required="true">
-
+      <div>
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Hector.Torres@gmail.com" required="true">
+      </div>
+      <div>
       <label id="number-label">Number</label>
       <input id="number" type="number" min="0" max="100" placeholder="27" required="true">
+      </div>
 
-
-
+        <div>
         <label for="lang">Language</label>
         <select id="dropdown"  name="languages" id="lang">
           <option value="javascript">Select a language</option>
@@ -34,26 +39,38 @@
           <option value="C++">C++</option>
           <option value="erlang">Erlang</option>
         </select>
+      </div>
 
+      <div>
+        <label for="lang">Choose a means on contact</label><br>
         <input type="radio" name="contact" value="email">
         <label for="contactChoice1">Email</label>
-
+      
         <input type="radio"  name="contact" value="phone">
         <label for="contactChoice2">Phone</label>
-
+      
         <input type="radio"  name="contact" value="mail">
         <label for="contactChoice3">Mail</label>
+      </div>
+
+      <div>
+        <label for="lang">Choose coding languages</label><br>
 
         <input type="checkbox" id="coding" name="interest" value="coding">
         <label for="coding">Coding</label>
-
+      
         <input type="checkbox" id="music" name="interest" value="music">
         <label for="music">Music</label>
+      </div>
 
+      <div>
+        <label for="lang">Kindly add any comment you think is relevant to the subject</label><br>
         <textarea id="comments"> </textarea>
+      </div>
 
+      <div>
         <button type="submit" id="submit">Submit</button>
-
+      </div>
 
     </form>
 
